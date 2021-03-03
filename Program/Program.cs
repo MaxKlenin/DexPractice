@@ -1,5 +1,6 @@
 ﻿using IEnumerableIEnumeratorLibrary;
 using OOPLibrary.TortoiseType;
+using IComparableLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,25 +16,24 @@ namespace Program
             bool key = true;
             while (key)
             {
-                Console.WriteLine(" 1-OOPLibrary \n 2-ShowIEnumerableIEnumeratorLibrary" +
-                    "\n ");
+                Console.WriteLine(" 1: OOPLibrary \n 2: ShowIEnumerableIEnumeratorLibrary" +
+                    "\n 3: IComparableLibrary");
 
                 switch (Console.ReadLine())
                 {
                     case "1":
                         ShowOOP();
                         break;
-
                     case "2":
                         ShowIEnumerableIEnumerator();
                         break;
-
+                    case "3":
+                        ShowIComparableLibrary();
+                        break;
                     default:
                         key = false;
-                            break;
+                        break;
                 }
-
-               
             }
             
         }
@@ -70,6 +70,12 @@ namespace Program
             {
                 Console.WriteLine(enumerator.Current);
             }
+        }
+
+        static void ShowIComparableLibrary()
+        {
+           
+
         }
     }
 }

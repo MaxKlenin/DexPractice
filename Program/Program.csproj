@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\IComparableLibrary\IComparableLibrary.csproj">
+      <Project>{cb732e8b-b71f-488a-b35b-20b139b36510}</Project>
+      <Name>IComparableLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IEnumerableIEnumeratorLibrary\IEnumerableIEnumeratorLibrary.csproj">
       <Project>{f7106d1d-04c0-478d-99f4-b126aff501bc}</Project>
       <Name>IEnumerableIEnumeratorLibrary</Name>
