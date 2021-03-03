@@ -5,9 +5,9 @@ namespace SpeedBoxingUnboxingLibrary
 {
     class BoxingUnboxing
     {
-        public static void Program()
-        {
-            int n = 100000;
+        public static void ShowBoxingUnboxing()
+        {             
+            int n = 1000;
             int x;
             object[] o = new object[n];
 

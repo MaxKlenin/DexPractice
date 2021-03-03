@@ -1,39 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace IComparableLibrary.Figure
 {
-    public class Rectangle : IComparable
+    public class Rectangle : BaseFigure
     {
         private readonly double _x;
         private readonly double _y;
 
         public Rectangle(double x, double y)
-        {        
-          _x = x;
-          _y = y;   
+        {
+            if (x > 0 && y > 0)
+            {
+                _x = x;
+                _y = y;
+            }
+            else throw new ArgumentException("Wrong format Rectangle");
         }
 
-        public double GetSquare()
+        public override double GetSquare()
         {
-            return _x * _y;
+            return Math.Round(_x * _y, 2);
         }
 
-        public int CompareTo(object obj)
+        public override double GetPyrimeter()
         {
-            if (obj == null) return 1;
-
-            Rectangle otherRectangle = obj as Rectangle;
-            if (otherRectangle != null)
-                return otherRectangle.GetSquare().CompareTo(this.GetSquare());
-            else
-                throw new ArgumentException("Объект не является квадратом");
+            return Math.Round(2 * (_x + _y), 2);
         }
 
         public override string ToString()
         {
-            return "Квадрат со сторонами " + _x + " и "+ _y +" имеет площадь " + Math.Round(this.GetSquare(), 2);
+            return "Rectangle";
         }
     }
 }

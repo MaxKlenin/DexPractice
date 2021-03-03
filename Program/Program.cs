@@ -1,12 +1,8 @@
 ﻿using IEnumerableIEnumeratorLibrary;
-using OOPLibrary.TortoiseType;
-using IComparableLibrary.Figure;
+using OOPLibrary;
+using IComparableLibrary;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections;
+using SpeedBoxingUnboxingLibrary;
 
 namespace Program
 {
@@ -18,18 +14,18 @@ namespace Program
             while (key)
             {
                 Console.WriteLine(" 1: OOPLibrary \n 2: ShowIEnumerableIEnumeratorLibrary" +
-                    "\n 3: IComparableLibrary");
+                    "\n 3: IComparableLibrary \n 4: IQueryableLibrary");
 
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        ShowOOP();
+                        OOPResult.ShowOOP();
                         break;
                     case "2":
-                        ShowIEnumerableIEnumerator();
+                        IEnumeratorResult.ShowIEnumerableIEnumerator();
                         break;
                     case "3":
-                        ShowIComparableLibrary();
+                        IComparableResult.ShowIComporable();
                         break;
                     default:
                         key = false;
@@ -39,7 +35,8 @@ namespace Program
                         break;
                 }
 
-            }  
+            } 
+        
         }
 
         private static void ShowIEnumerableIEnumerator()
@@ -64,47 +61,7 @@ namespace Program
 
         private static void ShowIComparableLibrary()
         {
-
-            ArrayList rectangles = new ArrayList();
-            Random rnd = new Random();
-
-            for (int i = 1; i <= 10; i++)
-            {
-                int x = rnd.Next(1, 20);
-                int y = rnd.Next(1, 20);
-                rectangles.Add(new Rectangle(x, y));
-            }
-
-            Console.WriteLine(" Cписок квадрагов: ");
-            foreach (var item in rectangles)
-            {
-                Console.WriteLine(item.ToString());
-            }
-
-            rectangles.Sort();
-
-            Console.WriteLine("\n Отсортированный список квадрагов: ");
-
-            foreach (var circle in rectangles)
-            {
-                Console.WriteLine(circle.ToString());
-            }
-
-            Console.ReadLine();
-        }
-
-        private static void ShowOOP()
-        {
-            Console.WriteLine("***Tortoise***");
-            var defaultTortoise = new DefaultTortoise("DefaultTortoise", "Обычное", "Обычный");
-            var commodoreTortoise = new CommodoreTortoise("CommodoreTortoise", "Укреплённое", "Металический", " 10 lvl");
-            var admiralTortoise = new AdmiralTortoise("AdmiralTortoise", "Бионическое", "Титановый", " 40 lvl", "12 lvl", "10 lvl");
-
-            var turtles = new BaseTortoise[] { defaultTortoise, commodoreTortoise, admiralTortoise };
-            foreach (var tortoise in turtles)
-            {
-                tortoise.ShowInfo();
-            }
+           
         }
 
         private static void ShowIQuerable()
