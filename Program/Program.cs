@@ -1,4 +1,4 @@
-﻿
+﻿using IEnumerableIEnumeratorLibrary;
 using OOPLibrary.TortoiseType;
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,9 @@ namespace Program
             bool key = true;
             while (key)
             {
-                Console.WriteLine(" 1-OOPClass \n 2-");
+                Console.WriteLine(" 1-OOPLibrary \n 2-ShowIEnumerableIEnumeratorLibrary" +
+                    "\n ");
+
                 switch (Console.ReadLine())
                 {
                     case "1":
@@ -23,8 +25,15 @@ namespace Program
                         break;
 
                     case "2":
-                        
+                        ShowIEnumerableIEnumerator();
+                        break;
+
+                    default:
+                        key = false;
+                            break;
                 }
+
+               
             }
             
         }
@@ -43,5 +52,24 @@ namespace Program
             }
         }
         
+        static void ShowIEnumerableIEnumerator()
+        {
+            Fruit[] fruits = {new Fruit("Яблоко", 15), new Fruit("Груша", 5),
+                new Fruit("Ананас", 16), new Fruit("Апельсин", 3)};
+
+            Basket basket = new Basket(fruits);
+            foreach (var item in basket)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine();
+
+            var enumerator = basket.GetEnumerator();
+            while (enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current);
+            }
+        }
     }
 }
