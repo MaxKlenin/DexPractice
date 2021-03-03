@@ -6,10 +6,11 @@ namespace IComparableLibrary
     public static class IComparableResult
     {
         private static BaseFigure[] _fArray;
+
         public static void Generate()
         {
             var rand = new Random();
-            _fArray = new BaseFigure[10];
+            _fArray = new BaseFigure[100];
             int i = 0;
             while(i < _fArray.Length)
             { 

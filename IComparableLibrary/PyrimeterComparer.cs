@@ -10,9 +10,9 @@ namespace IComparableLibrary.Figure
         {
             if (first != null && second != null)
             {
-                double firstPyrimeter = first.GetSquare();
-                double secondPyrimeter = second.GetSquare();
-                if (secondPyrimeter > firstPyrimeter)
+                double firstPyrimeter = first.GetPyrimeter();
+                double secondPyrimeter = second.GetPyrimeter();
+                if (secondPyrimeter < firstPyrimeter)
                 {
                     return -1;
                 }

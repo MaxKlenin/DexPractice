@@ -31,7 +31,7 @@ namespace Program
                         key = false;
                         break;
                     case "4":
-                        
+                        BoxingUnboxing.ShowBoxingUnboxing();
                         break;
                 }
 
@@ -57,15 +57,6 @@ namespace Program
             {
                 Console.WriteLine(enumerator.Current);
             }
-        }
-
-        private static void ShowIComparableLibrary()
-        {
-           
-        }
-
-        private static void ShowIQuerable()
-        {
         }
     }
 }

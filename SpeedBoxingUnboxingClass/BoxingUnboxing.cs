@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace SpeedBoxingUnboxingLibrary
 {
-    class BoxingUnboxing
+    public static class BoxingUnboxing
     {
         public static void ShowBoxingUnboxing()
         {             
