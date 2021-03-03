@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OOPClass\OOPClass.csproj">
+    <ProjectReference Include="..\OOPClass\OOPLibrary.csproj">
       <Project>{b9d95949-03ce-406c-8b53-5e567a824019}</Project>
-      <Name>OOPClass</Name>
+      <Name>OOPLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\SpeedBoxingUnboxingClass\SpeedBoxingUnboxingClass.csproj">
       <Project>{1de69935-0360-4468-a34d-27fbe8dbf380}</Project>

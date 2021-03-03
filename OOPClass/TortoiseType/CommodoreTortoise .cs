@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OOPClass.TortoiseType
+namespace OOPLibrary.TortoiseType
 {
     public class CommodoreTortoise : DefaultTortoise
     {

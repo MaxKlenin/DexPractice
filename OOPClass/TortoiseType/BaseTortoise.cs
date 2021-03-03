@@ -1,4 +1,4 @@
-﻿namespace OOPClass.TortoiseType
+﻿namespace OOPLibrary.TortoiseType
 {
     public abstract class BaseTortoise
     {
