@@ -7,7 +7,7 @@ namespace IComparableLibrary
     {
         private static BaseFigure[] _fArray;
 
-        public static void Generate()
+        public static void CreateArr()
         {
             var rand = new Random();
             _fArray = new BaseFigure[100];
@@ -39,8 +39,9 @@ namespace IComparableLibrary
 
         public static void ShowIComporable()
         {
-            Generate();
+            CreateArr();
             Console.WriteLine("Список площадей: ");
+
             foreach (var item in _fArray)
             {
                 Console.WriteLine(item + " с площадью: " + item.GetSquare());
@@ -54,7 +55,7 @@ namespace IComparableLibrary
                 Console.WriteLine(item + " с площадью: " + item.GetSquare());
             }
 
-            Generate();
+            CreateArr();
             Console.WriteLine("\nСписок Пириметров: ");
             foreach (var item in _fArray)
             {
