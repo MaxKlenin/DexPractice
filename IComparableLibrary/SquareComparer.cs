@@ -12,7 +12,7 @@ namespace IComparableLibrary
             {
                 double firstSquare = first.GetSquare();
                 double secondSquare = second.GetSquare();
-                if (secondSquare < firstSquare)
+                if (secondSquare > firstSquare)
                 {
                     return -1;
                 }

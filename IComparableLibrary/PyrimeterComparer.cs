@@ -12,7 +12,7 @@ namespace IComparableLibrary.Figure
             {
                 double firstPyrimeter = first.GetPyrimeter();
                 double secondPyrimeter = second.GetPyrimeter();
-                if (secondPyrimeter < firstPyrimeter)
+                if (secondPyrimeter > firstPyrimeter)
                 {
                     return -1;
                 }
