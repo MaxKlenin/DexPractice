@@ -54,6 +54,10 @@
       <Project>{b9d95949-03ce-406c-8b53-5e567a824019}</Project>
       <Name>OOPClass</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SpeedBoxingUnboxingClass\SpeedBoxingUnboxingClass.csproj">
+      <Project>{1de69935-0360-4468-a34d-27fbe8dbf380}</Project>
+      <Name>SpeedBoxingUnboxingClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
