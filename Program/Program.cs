@@ -1,11 +1,12 @@
 ﻿using IEnumerableIEnumeratorLibrary;
 using OOPLibrary.TortoiseType;
-using IComparableLibrary;
+using IComparableLibrary.Figure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace Program
 {
@@ -74,8 +75,33 @@ namespace Program
 
         static void ShowIComparableLibrary()
         {
-           
 
+            ArrayList rectangles = new ArrayList();
+            Random rnd = new Random();
+
+            for (int i = 1; i <= 10; i++)
+            {
+                int x = rnd.Next(1, 20);
+                int y = rnd.Next(1, 20);
+                rectangles.Add(new Rectangle(x,y));
+            }
+
+            Console.WriteLine(" Cписок квадрагов: ");
+            foreach (var item in rectangles)
+            {
+                Console.WriteLine(item.ToString());
+            }
+
+            rectangles.Sort();
+
+            Console.WriteLine("\n Отсортированный список квадрагов: ");
+
+            foreach (var circle in rectangles)
+            {
+                Console.WriteLine(circle.ToString());
+            }
+
+            Console.ReadLine();
         }
     }
 }

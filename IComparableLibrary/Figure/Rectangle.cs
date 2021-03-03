@@ -4,7 +4,7 @@ using System.Text;
 
 namespace IComparableLibrary.Figure
 {
-    class Rectangle : BaseFigure
+    public class Rectangle : IComparable
     {
         private readonly double _x;
         private readonly double _y;
@@ -15,14 +15,25 @@ namespace IComparableLibrary.Figure
           _y = y;   
         }
 
-        public override double GetSquare()
+        public double GetSquare()
         {
             return _x * _y;
         }
 
+        public int CompareTo(object obj)
+        {
+            if (obj == null) return 1;
+
+            Rectangle otherRectangle = obj as Rectangle;
+            if (otherRectangle != null)
+                return otherRectangle.GetSquare().CompareTo(this.GetSquare());
+            else
+                throw new ArgumentException("Объект не является квадратом");
+        }
+
         public override string ToString()
         {
-            return "Rectangle";
+            return "Квадрат со сторонами " + _x + " и "+ _y +" имеет площадь " + Math.Round(this.GetSquare(), 2);
         }
     }
 }
