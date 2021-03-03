@@ -34,26 +34,15 @@ namespace Program
                     default:
                         key = false;
                         break;
+                    case "4":
+                        
+                        break;
                 }
-            }
-            
+
+            }  
         }
 
-        static void ShowOOP()
-        {
-            Console.WriteLine("***Tortoise***");
-            var defaultTortoise = new DefaultTortoise("DefaultTortoise", "Обычное", "Обычный");
-            var commodoreTortoise = new CommodoreTortoise("CommodoreTortoise", "Укреплённое", "Металический", " 10 lvl");
-            var admiralTortoise = new AdmiralTortoise("AdmiralTortoise", "Бионическое", "Титановый", " 40 lvl", "12 lvl", "10 lvl");
-            
-            var turtles = new BaseTortoise[] { defaultTortoise, commodoreTortoise, admiralTortoise };
-            foreach (var tortoise in turtles)
-            {
-                tortoise.ShowInfo();
-            }
-        }
-        
-        static void ShowIEnumerableIEnumerator()
+        private static void ShowIEnumerableIEnumerator()
         {
             Fruit[] fruits = {new Fruit("Яблоко", 15), new Fruit("Груша", 5),
                 new Fruit("Ананас", 16), new Fruit("Апельсин", 3)};
@@ -73,7 +62,7 @@ namespace Program
             }
         }
 
-        static void ShowIComparableLibrary()
+        private static void ShowIComparableLibrary()
         {
 
             ArrayList rectangles = new ArrayList();
@@ -83,7 +72,7 @@ namespace Program
             {
                 int x = rnd.Next(1, 20);
                 int y = rnd.Next(1, 20);
-                rectangles.Add(new Rectangle(x,y));
+                rectangles.Add(new Rectangle(x, y));
             }
 
             Console.WriteLine(" Cписок квадрагов: ");
@@ -102,6 +91,24 @@ namespace Program
             }
 
             Console.ReadLine();
+        }
+
+        private static void ShowOOP()
+        {
+            Console.WriteLine("***Tortoise***");
+            var defaultTortoise = new DefaultTortoise("DefaultTortoise", "Обычное", "Обычный");
+            var commodoreTortoise = new CommodoreTortoise("CommodoreTortoise", "Укреплённое", "Металический", " 10 lvl");
+            var admiralTortoise = new AdmiralTortoise("AdmiralTortoise", "Бионическое", "Титановый", " 40 lvl", "12 lvl", "10 lvl");
+
+            var turtles = new BaseTortoise[] { defaultTortoise, commodoreTortoise, admiralTortoise };
+            foreach (var tortoise in turtles)
+            {
+                tortoise.ShowInfo();
+            }
+        }
+
+        private static void ShowIQuerable()
+        {
         }
     }
 }
