@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPLibrary", "OOPClass\OOPLibrary.csproj", "{B9D95949-03CE-406C-8B53-5E567A824019}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedBoxingUnboxingClass", "SpeedBoxingUnboxingClass\SpeedBoxingUnboxingClass.csproj", "{1DE69935-0360-4468-A34D-27FBE8DBF380}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedBoxingUnboxingLibrary", "SpeedBoxingUnboxingClass\SpeedBoxingUnboxingLibrary.csproj", "{1DE69935-0360-4468-A34D-27FBE8DBF380}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerableIEnumeratorLibrary", "IEnumerableIEnumeratorLibrary\IEnumerableIEnumeratorLibrary.csproj", "{F7106D1D-04C0-478D-99F4-B126AFF501BC}"
 EndProject

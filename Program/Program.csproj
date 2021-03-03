@@ -50,13 +50,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\IEnumerableIEnumeratorLibrary\IEnumerableIEnumeratorLibrary.csproj">
+      <Project>{f7106d1d-04c0-478d-99f4-b126aff501bc}</Project>
+      <Name>IEnumerableIEnumeratorLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OOPClass\OOPLibrary.csproj">
       <Project>{b9d95949-03ce-406c-8b53-5e567a824019}</Project>
       <Name>OOPLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SpeedBoxingUnboxingClass\SpeedBoxingUnboxingClass.csproj">
+    <ProjectReference Include="..\SpeedBoxingUnboxingClass\SpeedBoxingUnboxingLibrary.csproj">
       <Project>{1de69935-0360-4468-a34d-27fbe8dbf380}</Project>
-      <Name>SpeedBoxingUnboxingClass</Name>
+      <Name>SpeedBoxingUnboxingLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

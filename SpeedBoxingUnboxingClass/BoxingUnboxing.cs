@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace SpeedBoxingUnboxingClass
+namespace SpeedBoxingUnboxingLibrary
 {
     class BoxingUnboxing
     {
