@@ -58,8 +58,8 @@
       <Project>{f7106d1d-04c0-478d-99f4-b126aff501bc}</Project>
       <Name>IEnumerableIEnumeratorLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IQueryableLibrary1\IQueryableLibrary.csproj">
-      <Project>{2c3643a8-d2ef-4237-9f22-7a92f32ef3e2}</Project>
+    <ProjectReference Include="..\IQueryableLibrary\IQueryableLibrary.csproj">
+      <Project>{8ad1396a-70ec-42c1-9d84-f45e2f1285d4}</Project>
       <Name>IQueryableLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\OOPClass\OOPLibrary.csproj">
