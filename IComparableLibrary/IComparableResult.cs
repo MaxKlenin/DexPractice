@@ -10,7 +10,7 @@ namespace IComparableLibrary
         public static void CreateArr()
         {
             var rand = new Random();
-            _fArray = new BaseFigure[1000];
+            _fArray = new BaseFigure[100];
             int i = 0;
             while(i < _fArray.Length)
             { 
